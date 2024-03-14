@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global Styles */
+h1,h2,h3,h4,h5{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p{
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Yellow Block */
+.yellow-block{
+    width:530px;
+    height:400px;
+    border-radius: 20px; 
+    background-color: #F2B961;
+  }
+  
+  /* Top Scorer */
+  .top-scorer{
+    width: 530px;
+    height: 120px;
+    background-color: #F2B961;
+    border-radius: 20px;
+  }
+  
+  .icon{
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+    background-color: #F7D5A0;
+  }
+  
+  .soccer-icon{
+    width: 90px;
+    height: 90px;
+  }
+ 
+  
+  .scorer-name{
+    font-size: 24px;
+  }
+
+ .scorer{
+  padding-top: 12px;
+ }
+
+ .team-name{
+  margin-top: -5px;
+ }
+  
+  /* Upcoming game block */
+  
+  .upcoming-block{
+    width: 530px;
+    height: 260px;
+    border-radius: 20px;
+    background-color: #2F8B98;
+    margin-top: 20px;
+  } 
+
+  .upcoming-block h6{
+    color: white;
+    padding: 12px 15px;
+  }
+
+ .date{
+    margin-left: 175px;
+    color: white;
+    font-size: 30px;
+  }
+
+  .img-placeholder{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #cdcdcd;
+  }
+
+  .teams{
+    color: white;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  .teams p{
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  /* Link Blocks */
+  .white-block{
+    width: 530px;
+    height: 343px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+  }
+
+  .white-block h2{
+    padding: 12px 15px;
+  }
+
+  .white-block p{
+    padding: 0px 15px;
+  }
+
+  .link{
+    margin-left: 400px;
+    margin-top: 80px;
+  }
