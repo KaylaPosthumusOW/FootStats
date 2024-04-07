@@ -1,8 +1,8 @@
-import Yellow from './yellow-block'
+import Highlight from './highlights'
 import TopScorer from './topScore'
 import UpcomingGame from './upcomingGame'
 import LinkBlocks from './linkBlocks'
-import SoccerBall from './soccer-ball.png'
+
 
 function Dashboard() {
   return (
@@ -14,7 +14,7 @@ function Dashboard() {
             {/* <div className="container"> */}
               <div className="row">
                 <div className="col-6">
-                  <Yellow />
+                  <Highlight />
                 </div>
                 <div className="col-6">
                   <TopScorer />

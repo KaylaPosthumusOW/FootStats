@@ -1,60 +1,49 @@
-// BarChart.js
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const BarGraph = () => {
+const BarGraph = (props) => {
   const chartRef = useRef(null);
+  const team = props.team;
 
   useEffect(() => {
-    // Data for the bar chart
+    if (!team) return; // Exit early if team data is not available
+
+    // Filter out players with zero shots total
+    const filteredPlayers = team.players.filter(player => player.player_shots_total > 0);
+
+    const playerNames = filteredPlayers.map(player => player.player_name);
+    const playerShots = filteredPlayers.map(player => player.player_shots_total);
+
     const data = {
-      labels: ['Manchester City', 'Liverpool', 'Manchester United', 'Arsenal', 'Brentford'],
-      datasets: [
-        {
-          label: 'Team Scores',
-          data: [5, 3, 7, 5, 6, 4],
-          backgroundColor: [
-            'rgba(47, 139, 152, 0.2)',
-            'rgba(242, 185, 97, 0.2)',
-            'rgba(143, 46, 78, 0.2)'
-          ],
-          borderColor: [
-            'rgba(75, 192, 192, 1)',
-            'rgba(242, 185, 97, 1)',
-            'rgba(143, 46, 78, 01)'
-          ],
-          borderWidth: 1,
-        },
-      ],
+      labels: playerNames,
+      datasets: [{
+        label: 'Total Shots on Goal',
+        backgroundColor: 'rgba(47, 139, 152, 0.5)',
+        borderColor: 'rgba(47, 139, 152, 1)',
+        borderWidth: 1,
+        data: playerShots
+      }]
     };
 
-    // Options for the bar chart
-    const options = {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    };
-
-    // Create the bar chart
-    const myChart = new Chart(chartRef.current, {
+    const config = {
       type: 'bar',
       data: data,
-      options: options,
-    });
-
-    // Cleanup on component unmount
-    return () => {
-      myChart.destroy();
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
     };
-  }, []);
 
-  return (
-    <div>
-      <canvas ref={chartRef} width="400" height="300"></canvas>
-    </div>
-  );
+    if (chartRef && chartRef.current) {
+      const myChart = new Chart(chartRef.current, config);
+      return () => myChart.destroy();
+    }
+  }, [team]);
+
+  return <canvas ref={chartRef} />;
 };
 
 export default BarGraph;

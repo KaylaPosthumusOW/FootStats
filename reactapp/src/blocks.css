@@ -18,6 +18,14 @@ p{
     border-radius: 20px; 
     background-color: #F2B961;
   }
+
+  .yellow-block h6{
+    padding: 12px;
+  }
+
+  iframe{
+    padding: 20px;
+  }
   
   /* Top Scorer */
   .top-scorer{
@@ -73,7 +81,7 @@ p{
     font-size: 30px;
   }
 
-  .img-placeholder{
+  .team-badge{
     width: 80px;
     height: 80px;
     border-radius: 10px;
@@ -94,7 +102,7 @@ p{
   /* Link Blocks */
   .white-block{
     width: 530px;
-    height: 343px;
+    height: 236px;
     border-radius: 20px;
     background-color: white;
     margin-top: 20px;
@@ -109,6 +117,8 @@ p{
   }
 
   .link{
-    margin-left: 400px;
-    margin-top: 80px;
+    width: auto;
+    height: 80px;
+    margin-left: 420px;
   }
+  
