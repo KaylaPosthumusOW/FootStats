@@ -22,6 +22,25 @@ p{
   .yellow-block h6{
     padding: 12px;
   }
+  
+  .img-placeholder{
+    width: auto;
+    height: 100px;
+  }
+
+  .teams{
+    margin-bottom: 100px;
+  }
+
+  .team1 h5{
+    text-align: centre;
+    margin-top: 20px;
+  }
+
+  .team2 h5{
+    text-align: centre;
+    margin-top: 20px;
+  }
 
   iframe{
     padding: 20px;

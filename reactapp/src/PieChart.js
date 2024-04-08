@@ -2,39 +2,37 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const PieChart = () => {
+const PieChart = ({ player }) => {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    // Data for the pie chart
+    if (!player) return;
+
     const data = {
-      labels: ['Goals Scored', 'Assists', 'Possession', 'Shots on Target'],
+      labels: ['Fouls Committed', 'Yellow Cards', 'Tackles Made', 'Saves Made', 'Red Cards'],
       datasets: [
         {
-          data: [45, 30, 15, 20], // Example percentages (adjust as needed)
-          backgroundColor: ['#2F8B98', '#CA7692', '#F2B961', '#F7D5A0'], // Example colors
+          data: [player.player_fouls_committed, player.player_yellow_cards, player.player_tackles_made, player.player_saves_made, player.player_red_cards],
+          backgroundColor: ['#2F8B98', '#F2B961', '#CA7692', '#F7D5A0', '#FF5634'], // Example colors
         },
       ],
     };
 
-    // Options for the pie chart
     const options = {
       responsive: true,
       maintainAspectRatio: false,
     };
 
-    // Create the pie chart
     const myChart = new Chart(chartRef.current, {
       type: 'pie',
       data: data,
       options: options,
     });
 
-    // Cleanup on component unmount
     return () => {
       myChart.destroy();
     };
-  }, []);
+  }, [player]);
 
   return (
     <div>

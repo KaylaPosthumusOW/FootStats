@@ -28,7 +28,7 @@ const LineGraph = ({ dataType }) => {
           datasets: [ 
             {
               label: 'Number of Cards Issued',
-              data: [20, 25, 15, 30, 22, 28, 18, 16], 
+              data: [30, 24, 15, 27, 22, 28, 18, 16], 
               borderColor: '#2F8B98',
               borderWidth: 2,
               fill: false,
@@ -42,7 +42,7 @@ const LineGraph = ({ dataType }) => {
           datasets: [ 
             {
               label: 'Number of Substitutions',
-              data: [10, 12, 8, 15, 11, 14, 9, 8], 
+              data: [10, 12, 8, 13, 11, 14, 9, 8], 
               borderColor: '#CA7692',
               borderWidth: 2,
               fill: false,
@@ -56,7 +56,7 @@ const LineGraph = ({ dataType }) => {
           datasets: [ 
             {
               label: 'Number of Inactive Players',
-              data: [5, 6, 4, 8, 7, 6, 5, 4], 
+              data: [5, 6, 4, 8, 7, 6, 6, 4], 
               borderColor: '#82B9C1',
               borderWidth: 2,
               fill: false,
@@ -70,7 +70,7 @@ const LineGraph = ({ dataType }) => {
             datasets: [ 
               {
                 label: 'Possession Percentage',
-                data: [50, 52, 48, 55, 53, 56, 51, 49], // Sample data for possession percentage
+                data: [50, 52, 48, 55, 53, 56, 51, 49],
                 borderColor: '#F7D5A0',
                 borderWidth: 2,
                 fill: false,

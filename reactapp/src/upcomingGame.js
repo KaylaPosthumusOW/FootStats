@@ -3,54 +3,51 @@ import axios from 'axios';
 import './blocks.css';
 
 function UpcomingGame() {
-  const [upcomingGame, setUpcomingGame] = useState(null);
+  const [upcomingGames, setUpcomingGames] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
-    const API_KEY = '738497c4a9ed8b06fcca13810a0b4388fcf0d64389822aa3cfc9dfbf3aeabc53';
-    
-    axios.get(`https://apiv3.apifootball.com/?action=get_H2H&firstTeamId=7274&secondTeamId=161&league_id=152&APIkey=${API_KEY}`)
+    axios.get('https://apiv3.apifootball.com/?action=get_teams&league_id=152&APIkey=738497c4a9ed8b06fcca13810a0b4388fcf0d64389822aa3cfc9dfbf3aeabc53')
       .then(response => {
-        const data = response.data;
-        if (data && data.length > 0) {
-          setUpcomingGame(data[0]); // Set the first upcoming game
-        } else {
-          setError('No upcoming games found.');
-        }
+        const slicedData = response.data.slice(0, 2); // Using second and third array items
+        setUpcomingGames(slicedData);
+        setLoading(false); // Set loading to false after data is fetched
       })
       .catch(error => {
-        console.error('Error Fetching Data:', error);
         setError('Error Fetching Data: ' + error.message);
+        setLoading(false); // Set loading to false in case of error
       });
-  }, []); // Empty dependency array to run once on mount
+  }, []); 
 
   return (
     <div className="upcoming-block">
       <h6>Head2Head</h6>
-      {error && <p className="error">{error}</p>}
-      {upcomingGame && (
-        <div>
-          <p className="date">{upcomingGame.match_date}</p>
-          <div className="container">
-            <div className="row teams">
-              <div className="col-3">
-                <p>{upcomingGame.match_hometeam_name}</p>
-              </div>
-              <div className="col-3">
-                <div className="img-placeholder">
-                  <img src={upcomingGame.team_home_badge || 'placeholder.png'} alt="Home Team Badge" />
+      {upcomingGames.length > 0 && (
+        <div className="container"> 
+          {upcomingGames.map((game, index) => (
+            <div key={game.team_key}>
+              <p className="date">08 / 04 / 2024</p>
+              <div className="row teams">
+                <div className="col-3 team1">
+                  <h5>{index === 0 ? game.team_name : upcomingGames[0].team_name}</h5>
                 </div>
-              </div>
-              <div className="col-3">
-                <div className="img-placeholder">
-                  <img src={upcomingGame.team_away_badge || 'placeholder.png'} alt="Away Team Badge" />
+                <div className="col-3">
+                  <div>
+                    <img src={index === 0 ? game.team_badge : upcomingGames[0].team_badge || 'placeholder.png'} alt="Team Badge" className="img-placeholder" />
+                  </div>
                 </div>
-              </div>
-              <div className="col-3">
-                <p>{upcomingGame.match_awayteam_name}</p>
+                <div className="col-3">
+                  <div className="img-placeholder">
+                    <img src={index === 1 ? game.team_badge : upcomingGames[1].team_badge || 'placeholder.png'} alt="Team Badge" className="img-placeholder" />
+                  </div>
+                </div>
+                <div className="col-3 team2">
+                  <h5>{index === 1 ? game.team_name : upcomingGames[1].team_name}</h5>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       )}
     </div>

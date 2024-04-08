@@ -29,7 +29,7 @@ function Comparison() {
       <h1 className="header">Comparison</h1>
 
       <div className="container">
-        {/* Dropdown Buttons */}
+        {/* Dropdown Buttons */} 
         <div className="row">
           {/* Team A Dropdown */}
           <div className="col-6">
@@ -87,7 +87,7 @@ function Comparison() {
           <div className="row">
             <div className="col-6">
               <div className="BarGraphs-background">
-                <h3>Players Shots Total</h3>
+                <h3>Team Players Shots Total</h3>
                 <div className="barGraph">
                   <BarGraph team={teamA} />
                 </div>
@@ -95,7 +95,7 @@ function Comparison() {
             </div>
             <div className="col-6">
               <div className="BarGraphs-background">
-                <h3>Players Shots Total</h3>
+                <h3>Team Players Shots Total</h3>
                 <div className="barGraph">
                   <BarGraph team={teamB} />
                 </div>
@@ -138,15 +138,41 @@ function Comparison() {
 
       {/* Radar Chart Comparison */}
       {selectedPlayerA && selectedPlayerB && (
-        <div className="container">
+        <div className="container radarGraphs">
           <div className="row">
             <div className="col-6">
-              <h3>Team A Radar Graph</h3>
-              <RadarGraph players={selectedPlayerA} />
+              <div className="RadarGraphs-background">
+                <h3>Player Radar Graph</h3>
+                <div className="RadarGraphs">
+                <RadarGraph player={selectedPlayerA} /></div>
+              </div>
             </div>
             <div className="col-6">
-              <h3>Team B Radar Graph</h3>
-              <RadarGraph players={selectedPlayerB} />
+              <div className="RadarGraphs-background">
+                <h3>Player Radar Graph</h3>
+                <div className="RadarGraphs">
+                <RadarGraph player={selectedPlayerB} /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Pie Chart Comparison */}
+      {selectedPlayerA && selectedPlayerB && (
+        <div className="container radarGraphs">
+          <div className="row">
+            <div className="col-6">
+              <div className="RadarGraphs-background">
+                <h3>Player Pie Chart</h3>
+                <PieChart player={selectedPlayerA} />
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="RadarGraphs-background">
+                <h3>PLayer Pie Chart</h3>
+                <PieChart player={selectedPlayerB} />
+              </div>
             </div>
           </div>
         </div>
