@@ -81,7 +81,7 @@ function Comparison() {
         </div>
       )}
 
-      {/* LineGraph Comparison */}
+      {/* BarGraph Comparison */}
       {teamA && teamB && (
         <div className="container BarGraphs">
           <div className="row">
