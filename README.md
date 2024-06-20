@@ -234,7 +234,7 @@ The `Development Process` outlines the technical implementations and functionali
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://drive.google.com/drive/folders/1OKNTZGA93za5IHH613BifTZkndk62LY-)
 
 <!-- ROADMAP -->
 
