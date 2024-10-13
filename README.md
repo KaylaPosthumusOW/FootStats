@@ -1,10 +1,6 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/WolfOWI/exhibito?color=%000000)
-![GitHub watchers](https://img.shields.io/github/watchers/WolfOWI/exhibito?color=%000000)
-![GitHub language count](https://img.shields.io/github/languages/count/WolfOWI/exhibito?color=%000000)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WolfOWI/exhibito?color=%000000)
 
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Kayla Posthumus - 231096</h5>
@@ -71,7 +67,7 @@
 
 <!-- header image of project -->
 
-![FootStatsLogo](../Formative-Assessment_231096/reactapp/assets/FootStats%20Home.png)
+![FootStatsLogo](../assets/FootStats%20Home.png)
 
 ### Project Description
 
@@ -135,20 +131,18 @@ Here are the steps to clone this repo using GitHub Desktop and set up the projec
 
 ## Features and Functionality
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Homepage%20mock%20up%20transparent.png)
+![ExhibitoLogo](../assets/Homepage%20mock%20up%20transparent.png)
 
 ### Feature 1
 
 The dashboard shows three features. 1st a youtube video showing the top goals for Manchester United. The 2nd feature is the top scorer in the premiere league that's populated using the API. Lastly the upcoming game between 2 teams are populated using the API.
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Mockup%201.png)
+![ExhibitoLogo](../assets/Mockup%201.png)
 
 ### Feature 2
 
 The Comparison page is where two teams are compared using 3 charts; a bar graph, a radar chart and a pie chart. The user is able to choose 2 teams from a dropdown menu. Once the teams are chosen the team emblem and information as well as the bar graph is rendered. 
 The user then chooses players from the chosen teams where a comparison between the 2 player are done using the Radar chart and the pie chart.
-
-![ExhibitoLogo](../exhibito/src/assets/mock-ups/StandardUser.png)\
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
@@ -161,12 +155,12 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 For the ideation we designed a mood board and also determined our colour palette and typography
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Moodboard.png)
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Brand%20Identity.png)
+![ExhibitoLogo](../assets/Moodboard.png)
+![ExhibitoLogo](../assets/Brand%20Identity.png)
 
 ### Wireframes
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Wireframes.png)
+![ExhibitoLogo](../assets/Wireframes.png)
 
 
 <!-- DEVELOPMENT PROCESS -->
@@ -222,11 +216,11 @@ The `Development Process` outlines the technical implementations and functionali
 
 ### Mockups
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Homepage%20mock-up.png)
+![ExhibitoLogo](../assets/Homepage%20mock-up.png)
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Mockup%201.png)
+![ExhibitoLogo](../assets/Mockup%201.png)
 
-![ExhibitoLogo](../Formative-Assessment_231096/reactapp/assets/Mock%20up%20-%20setting.png)
+![ExhibitoLogo](../assets/Mock%20up%20-%20setting.png)
 
 <!-- VIDEO DEMONSTRATION -->
 
