@@ -8,22 +8,22 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/KaylaPosthumusOW/Formative-Assessment_231096">
-    <img src="./reactapp/assets/FootStats dark-03.png" alt="Logo" width="160" height="140">
+  <a href="https://github.com/KaylaPosthumusOW/FootStats.git">
+    <img src="./assets/FootStats dark-03.png" alt="Logo" width="160" height="140">
   </a>
   
   <h3 align="center">FootStats</h3>
 
   <p align="center">
      Unlocking Insights, Empowering Decisions<br>
-      <a href="https://github.com/KaylaPosthumusOW/Formative-Assessment_231096"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/KaylaPosthumusOW/FootStats.git"><strong>Explore the docs »</strong></a>
    <br />
    <br />
    <a href="path/to/demonstration/video">View Demo</a>
     ·
-    <a href="https://github.com/KaylaPosthumusOW/Formative-Assessment_231096">Report Bug</a>
+    <a href="https://github.com/KaylaPosthumusOW/FootStats.git">Report Bug</a>
     ·
-    <a href="https://github.com/KaylaPosthumusOW/Formative-Assessment_231096">Request Feature</a>
+    <a href="https://github.com/KaylaPosthumusOW/FootStats.git">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
