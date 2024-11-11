@@ -9,7 +9,7 @@
 <p align="center">
 
   <a href="https://github.com/KaylaPosthumusOW/Formative-Assessment_231096">
-    <img src="../Formative-Assessment_231096/reactapp/assets/FootStats dark-03.png" alt="Logo" width="160" height="140">
+    <img src="./reactapp/assets/FootStats dark-03.png" alt="Logo" width="160" height="140">
   </a>
   
   <h3 align="center">FootStats</h3>
@@ -67,7 +67,7 @@
 
 <!-- header image of project -->
 
-![FootStatsLogo](../assets/FootStats%20Home.png)
+![FootStatsLogo](./reactapp/assets/FootStats%20Home.png)
 
 ### Project Description
 
@@ -131,13 +131,13 @@ Here are the steps to clone this repo using GitHub Desktop and set up the projec
 
 ## Features and Functionality
 
-![ExhibitoLogo](../assets/Homepage%20mock%20up%20transparent.png)
+![ExhibitoLogo](./reactapp/assets/Homepage%20mock%20up%20transparent.png)
 
 ### Feature 1
 
 The dashboard shows three features. 1st a youtube video showing the top goals for Manchester United. The 2nd feature is the top scorer in the premiere league that's populated using the API. Lastly the upcoming game between 2 teams are populated using the API.
 
-![ExhibitoLogo](../assets/Mockup%201.png)
+![ExhibitoLogo](./reactapp/assets/Mockup%201.png)
 
 ### Feature 2
 
@@ -155,12 +155,12 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 For the ideation we designed a mood board and also determined our colour palette and typography
 
-![ExhibitoLogo](../assets/Moodboard.png)
-![ExhibitoLogo](../assets/Brand%20Identity.png)
+![ExhibitoLogo](./reactapp/assets/Moodboard.png)
+![ExhibitoLogo](./reactapp/assets/Brand%20Identity.png)
 
 ### Wireframes
 
-![ExhibitoLogo](../assets/Wireframes.png)
+![ExhibitoLogo](./reactapp/assets/Wireframes.png)
 
 
 <!-- DEVELOPMENT PROCESS -->
@@ -216,11 +216,11 @@ The `Development Process` outlines the technical implementations and functionali
 
 ### Mockups
 
-![ExhibitoLogo](../assets/Homepage%20mock-up.png)
+![ExhibitoLogo](./reactapp/assets/Homepage%20mock-up.png)
 
-![ExhibitoLogo](../assets/Mockup%201.png)
+![ExhibitoLogo](./reactapp/assets/Mockup%201.png)
 
-![ExhibitoLogo](../assets/Mock%20up%20-%20setting.png)
+![ExhibitoLogo](./reactapp/assets/Mock%20up%20-%20setting.png)
 
 <!-- VIDEO DEMONSTRATION -->
 
